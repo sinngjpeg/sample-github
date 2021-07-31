@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_view_background"
+        android:padding="@dimen/size_8dp">
+
+        <TextView
+            android:id="@+id/name_repository"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:layout_marginLeft="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:text="@string/txt_name_repository"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/description_repository"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4dp"
+            android:text="@string/txt_description_repository"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintStart_toStartOf="@id/name_repository"
+            app:layout_constraintTop_toBottomOf="@id/name_repository" />
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:src="@drawable/ic_share"
+            app:layout_constraintStart_toStartOf="@id/description_repository"
+            app:layout_constraintTop_toBottomOf="@id/description_repository" />
+
+        <TextView
+            android:id="@+id/txt_share"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_4dp"
+            android:layout_marginLeft="@dimen/size_4dp"
+            android:text="234"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintStart_toEndOf="@id/img_share"
+            app:layout_constraintTop_toTopOf="@id/img_share" />
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_8dp"
+            android:layout_marginLeft="@dimen/size_8dp"
+            android:src="@drawable/ic_star"
+            app:layout_constraintStart_toEndOf="@id/txt_share"
+            app:layout_constraintTop_toTopOf="@id/txt_share" />
+
+        <TextView
+            android:id="@+id/txt_star"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_4dp"
+            android:layout_marginLeft="@dimen/size_4dp"
+            android:text="234"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintStart_toEndOf="@id/img_star"
+            app:layout_constraintTop_toTopOf="@id/img_star" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/card_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/size_4dp"
+            app:layout_constraintGuide_begin="139dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
