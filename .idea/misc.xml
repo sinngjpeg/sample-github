@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Sinng/Documents/Projetos/sample-github/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/Users/Sinng/Documents/Projetos/sample-github/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Sinng/Documents/Projetos/sample-github/app/src/main/res/layout/fragment_repository_java.xml" value="0.209375" />
+        <entry key="..\:/Users/Sinng/Documents/Projetos/sample-github/app/src/main/res/layout/fragment_repository_kotlin.xml" value="0.209375" />
         <entry key="..\:/Users/Sinng/Documents/Projetos/sample-github/app/src/main/res/layout/item_repository.xml" value="0.33" />
         <entry key="..\:/Users/Sinng/Documents/Projetos/sample-github/app/src/main/res/layout/toolbar_repository.xml" value="0.209375" />
         <entry key="..\:/Users/Sinng/Documents/Projetos/sample-github/app/src/main/res/menu/botton_main_navigation.xml" value="0.209375" />
