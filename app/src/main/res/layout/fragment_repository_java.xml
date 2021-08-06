@@ -10,15 +10,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="@dimen/size_16dp" />
+        app:layout_constraintGuide_begin="@dimen/size_8dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="@dimen/size_16dp" />
+        app:layout_constraintGuide_end="@dimen/size_8dp" />
 
+    <ScrollView
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/card_repository"
@@ -30,5 +37,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideline_right"
         app:layout_constraintStart_toStartOf="@id/guideline_left" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

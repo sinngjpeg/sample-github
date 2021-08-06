@@ -1,9 +1,12 @@
-package com.example.samplegithub
+package com.example.samplegithub.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
+import com.example.samplegithub.R
+import com.example.samplegithub.utils.StringUtils.JAVA_TAG
+import com.example.samplegithub.utils.StringUtils.KOTLIN_TAG
 import com.example.samplegithub.databinding.ActivityMainBinding
 import com.example.samplegithub.fragment.RepositoryJavaFragment
 import com.example.samplegithub.fragment.RepositoryKotlinFragment
@@ -33,11 +36,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 fragment,
                 tag
             ).commit()
-    }
-
-    companion object {
-        private const val JAVA_TAG = "JAVA"
-        private const val KOTLIN_TAG = "KOTLIN"
     }
 
     private fun setUpBottomNavigation() {
